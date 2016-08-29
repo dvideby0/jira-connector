@@ -1,7 +1,7 @@
 {
-  "name": "jira-connector",
-  "version": "2.3.0",
-  "description": "Easy to use NodeJS wrapper for the Jira REST API.",
+  "name": "jira-connector-plus",
+  "version": "0.0.1",
+  "description": "Jira client based on https://github.com/floralvikings/jira-connector with additional support for sprints",
   "keywords": [
     "JIRA",
     "REST",
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Caleb Brinkman <floralvikings@gmail.com>",
+  "author": "352inc <devops@352inc.com>",
   "license": "MIT",
   "dependencies": {
     "oauth": "^0.9.12",
@@ -19,6 +19,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:floralvikings/jira-connector.git"
+    "url": "git@github.com:dvideby0/jira-connector-plus.git"
   }
 }
