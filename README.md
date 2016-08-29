@@ -14,14 +14,14 @@ Please update your code accordingly.
 Install with [npm](http://npmjs.org/):
 
 ```
-    $ npm install jira-connector
+    $ npm install jira-connector-plus
 ```
 
 Install via Git clone:
 
 ```
-    $ git clone https://github.com/floralvikings/jira-connector.git
-    $ cd jira-connector
+    $ git clone https://github.com/dvideby0/jira-connector-plus.git
+    $ cd jira-connector-plus
     $ npm install
 ```
 
@@ -47,7 +47,7 @@ Retrieve an issue from Jira, and print its summary to the console.
 
 ```javascript
 
-var JiraClient = require('jira-connector');
+var JiraClient = require('jira-connector-plus');
 
 var jira = new JiraClient( {
     host: 'jenjinstudios.atlassian.net'
@@ -88,7 +88,7 @@ Jira instance.  However, jira-connector supports it for users who are unable to 
 Example:
 
 ```javascript
-var JiraClient = require('jira-connector');
+var JiraClient = require('jira-connector-plus');
 
 var jira = new JiraClient( {
     host: 'jenjinstudios.atlassian.net',
@@ -110,7 +110,7 @@ More examples [here](https://developer.atlassian.com/jiradev/jira-apis/jira-rest
 Example:
 
 ```javascript
-var JiraClient = require('jira-connector');
+var JiraClient = require('jira-connector-plus');
 
 var jira = new JiraClient( {
     host: 'jenjinstudios.atlassian.net',
@@ -141,7 +141,7 @@ Once you have this data, you will need to generate an OAuth token and secret for
 helper functions for exactly this purpose:
 
 ```javascript
-var JiraClient = require('./index.js');
+var JiraClient = require('jira-connector-plus');
 
 JiraClient.oauth_util.getAuthorizeURL({
     host: 'jenjinstudios.atlassian.net',
@@ -171,7 +171,7 @@ Allowing access will display a verifier code.  Once you have this code, you can 
 for an Access Token with all the permissions of your account; jira-connector provides a function to help with this:
 
 ```javascript
-var JiraClient = require('./index.js');
+var JiraClient = require('jira-connector-plus');
 
 JiraClient.oauth_util.swapRequestTokenWithAccessToken({
     host: 'jenjinstudios.atlassian.net',
@@ -193,7 +193,7 @@ This will query Jira for an Access Token, which will then be printed to the scre
 Jira with OAuth!
 
 ```javascript
-var JiraClient = require('./index.js');
+var JiraClient = require('jira-connector-plus');
 
 var jira = new JiraClient({
     host: 'jenjinstudios.atlassian.net',
@@ -217,7 +217,7 @@ pain of setting up an OAuth method.
 
 For example, using `though-cookie-filestore`:
 ```javascript
-var JiraClient = require('../jira-connector'),
+var JiraClient = require('jira-connector-plus'),
     FileCookieStore = require('tough-cookie-filestore'),
 
     request = require('request'),
