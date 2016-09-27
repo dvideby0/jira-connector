@@ -21,14 +21,14 @@ function SprintClient(jiraClient) {
    */
   this.getAllSprints = function (opts, callback) {
     var options = {
-      uri: this.jiraClient.buildIntegrationURL('/greenhopper/1.0/integration/teamcalendars/sprint/list?jql=project=' + opts.projectId),
+      uri: this.jiraClient.buildIntegrationURL('/greenhopper/1.0/sprintquery/' + opts.rapidId + '?includeFutureSprints=true'),
       method: 'GET',
       json: true,
       followAllRedirects: true
     };
     this.jiraClient.makeRequest(options, callback);
   };
-  
+
   this.getSprint = function (opts, callback) {
     var options = {
       uri: this.jiraClient.buildIntegrationURL('/greenhopper/1.0/rapid/charts/sprintreport?rapidViewId=' + opts.rapidViewId + '&sprintId=' + opts.sprintId),
