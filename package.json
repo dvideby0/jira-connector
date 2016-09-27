@@ -1,6 +1,6 @@
 {
   "name": "jira-connector-plus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jira client based on https://github.com/floralvikings/jira-connector with additional support for sprints",
   "keywords": [
     "JIRA",
